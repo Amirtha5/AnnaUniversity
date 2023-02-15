@@ -73,16 +73,11 @@ public class Main {
             int phy = input.nextInt();
             int cutOffMarks = (maths / 2) + (chem / 4) + (phy / 4);
             cutOff[i] = cutOffMarks;
-            //System.out.print("Enter the college(1-Rathinam,2-PSG,3-CIT):");
-            //int college=input.nextInt();
-            //System.out.print("Enter the branch(1-CSE,2-IT,3-Mech):");
-            //int branch=input.nextInt();
             System.out.println("Counseling Report");
             System.out.println("-----------------");
             System.out.println("Roll Number: " + rollNumber);
             System.out.println("cutoff:" + cutOffMarks);
             System.out.println("\n");
-            //System.out.println("College:" + college);
         }
 
         for (i = 0; i < n; i++) {
