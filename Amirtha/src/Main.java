@@ -1,35 +1,24 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.lang.String;
-
 class Student {
     String name;
     int cutOffMarks;
     String branch;
-
-
-
     public String getName() {
         return name;
     }
-
     public int getcutOffMarks() {
         return cutOffMarks;
     }
-
     public String getBranch() {
         return branch;
     }
-
 }
-
 class College {
     String name;
     int filledSeats;
     boolean vacantSeats;
-
-
-
     public String getName() {
         return name;
     }
@@ -41,10 +30,6 @@ class College {
         return vacantSeats ;
     }
 }
-
-
-
-
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -79,14 +64,12 @@ public class Main {
             System.out.println("cutoff:" + cutOffMarks);
             System.out.println("\n");
         }
-
         for (i = 0; i < n; i++) {
             for (j = i + 1; j < n; j++) {
                 if (cutOff[i] < cutOff[j]) {
                     temp = cutOff[i];
                     cutOff[i] = cutOff[j];
                     cutOff[j] = temp;
-
                 }
             }
             System.out.println(cutOff[i]);
